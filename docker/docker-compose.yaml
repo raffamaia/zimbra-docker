@@ -3,13 +3,10 @@ version: "3"
 services:
   zimbra:
     container_name: zimbra
-    image: sec4you/zimbra
+    image: zimbra
     hostname: zimbra86-docker.zimbra.io
     environment: 
-      - PASSWORD=admin
-      # - MailSSLPort=443
-      # - AdminPort=7071
-      # - AdminURL=/zimbraAdmin
+      - PASSWORD=admin1234
     dns:
       - 127.0.0.1
       - 8.8.8.8
